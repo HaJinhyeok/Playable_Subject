@@ -27,3 +27,4 @@
 /Users/daniel/Documents/Playable/Playable_Subject/6.3.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/Scripts.csproj.CopyComplete
 /Users/daniel/Documents/Playable/Playable_Subject/6.3.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/UnityScriptsCompiler.dll
 /Users/daniel/Documents/Playable/Playable_Subject/6.3.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/UnityScriptsCompiler.pdb
+D:\@Unity\Playable_Subject\6.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll

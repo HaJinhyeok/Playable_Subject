@@ -1,8 +1,8 @@
 {
     "version": "6.3.0",
     "projectId": "1ea3bb43f778449c78ecaf64beaf075a",
-    "applicationID": 0,
-    "creativeName": "Subject-Test-Build",
+    "applicationID": 31170,
+    "creativeName": "hjhmoon61-naver-com",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -133,11 +133,10 @@
             ]
         },
         "scenes": [
-            "Assets/@SampleProject/Scenes/SampleScene.unity"
+            "Assets/@SampleProject/Scenes/SampleScene.unity",
+            "Assets/@Scenes/PlayableGame.unity"
         ],
-        "disabledScenes": [
-            "Assets/@Scenes/SampleScene.unity"
-        ],
+        "disabledScenes": [],
         "startupScene": 0,
         "packages": {
             "default": {

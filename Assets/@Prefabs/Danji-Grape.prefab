@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 6577289557705215775}
   - component: {fileID: 1551641938349236127}
   - component: {fileID: 6598404096259296970}
-  m_Layer: 0
+  - component: {fileID: -6195894494945386492}
+  - component: {fileID: 6549447225784052385}
+  m_Layer: 6
   m_Name: Danji-Grape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +85,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-6195894494945386492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8555325205161999461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5da72e310e9f254db17245753803ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6549447225784052385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8555325205161999461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4402728, y: 2.6333277, z: 1.4402728}
+  m_Center: {x: 0, y: 1.3171939, z: 0.7287142}

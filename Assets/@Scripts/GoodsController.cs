@@ -1,30 +1,42 @@
-using UnityEditor.Experimental.GraphView;
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class GoodsController : MonoBehaviour
 {
-    private bool _isMoving = false;
-    private Vector3 _destination;
-    private Vector3 _direction;
+    public int CurrentIdx;
+    public Vector3 CurrentLocalPosition;
+    public ShelfController CurrentShelf;
 
-    void Update()
+    public event Action OnMoveFinished;
+
+    public void MoveToShelf(RaycastHit hit)
     {
-        if (_isMoving)
+        ShelfController dst = hit.collider.GetComponent<ShelfController>();
+        int idx = dst.GetPossibleGoodsPos(hit);
+        CurrentLocalPosition = (idx < 0) ? CurrentLocalPosition : Define.GoodsPos[idx];
+        if (idx >= 0)
         {
-            transform.Translate(_direction * Define.GoodsSpeed * Time.deltaTime);
-            // 목표에 닿으면 이동 중지
-            if(Vector3.Distance(transform.position, _destination) <= 0.1f)
-            {
-                transform.position = _destination;
-                _isMoving = false;
-            }
+            CurrentShelf.SetSpace(CurrentIdx, false);
+            transform.SetParent(dst.transform);
+            CurrentShelf = dst;
+            dst.GoodsObjects[idx] = gameObject;
+            dst.SetSpace(idx, true);
+            CurrentIdx = idx;
         }
+        OnMoveFinished = null;
+        OnMoveFinished += dst.OnGoodsMovingFinished;
+        StartCoroutine(CoMoveToDst());
     }
 
-    public void MoveToPosition(Vector3 dst)
+    IEnumerator CoMoveToDst()
     {
-        _destination = dst;
-        _direction = (_destination - transform.position).normalized;
-        _isMoving = true;
+        while (Vector3.Distance(transform.localPosition, CurrentLocalPosition) > 0.1f)
+        {
+            transform.localPosition = Vector3.Lerp(transform.localPosition, CurrentLocalPosition, Define.GoodsSpeed * Time.deltaTime);
+            yield return null;
+        }
+        MouseInputController.s_isMoving = false;
+        OnMoveFinished?.Invoke();
     }
 }

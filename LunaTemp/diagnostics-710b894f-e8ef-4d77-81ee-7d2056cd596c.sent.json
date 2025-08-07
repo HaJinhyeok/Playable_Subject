@@ -1,0 +1,246 @@
+{
+  "BuildID": "710b894f-e8ef-4d77-81ee-7d2056cd596c",
+  "Command": "project:deploy",
+  "ProjectID": "1ea3bb43f778449c78ecaf64beaf075a",
+  "ProjectStateHash": "4e0c6a6e3cbb79d71ca7c6e4d0eeb54968672d3f0e86c76dd2b32f8941257923",
+  "StageCompletedAt": 3,
+  "EarliestFatalError": 3,
+  "StartTime": 1754560776410,
+  "EndTime": 1754560825835,
+  "PlaygroundUserID": 25441,
+  "OperatingSystem": "win32",
+  "UnityPackageID": null,
+  "TargetPlatform": "playground",
+  "UnityVersion": "2022.3.60f1\r",
+  "LunaVersion": "6.3.0",
+  "LogCount": 10,
+  "Logs": [
+    {
+      "LogID": "b00efafb-7cef-4c2f-85e0-2c028e23442a",
+      "Order": 10,
+      "Timestamp": 1754560826218,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3008",
+      "Description": "You are only using: 1 custom events.",
+      "Details": [
+        "You are only using 1 custom events. It is recommended to use more custom events to have a better understanding of the playable."
+      ],
+      "DescriptionValues": [
+        "1"
+      ],
+      "DetailsValues": [
+        "1"
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "cc37dd40-1052-45a5-b532-61601e690655",
+      "Order": 0,
+      "Timestamp": 1754560786386,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1030",
+      "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+      "Details": [
+        "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        "LiberationSans SDF - Fallback",
+        "Dynamic"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "b3861334-771d-4de0-8497-e9e13387e8ab",
+      "Order": 1,
+      "Timestamp": 1754560792136,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1006",
+      "Description": "Linear color space is not supported",
+      "Details": [
+        "Due to compatibility reasons, Luna is only able to use Gamma color space for rendering. Please adjust your player settings."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "32ab3969-62cc-4a8d-af52-6e6784a9aca0",
+      "Order": 2,
+      "Timestamp": 1754560792136,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1014",
+      "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+      "Details": [
+        "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "0f4264cb-5ff2-45fe-9127-c8bfa36b40e9",
+      "Order": 3,
+      "Timestamp": 1754560792162,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1027",
+      "Description": "This DOTween version is not supported",
+      "Details": [
+        "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "88ea6ab3-a8aa-4077-b1fb-bf56eefa8010",
+      "Order": 4,
+      "Timestamp": 1754560792162,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1015",
+      "Description": "This TMP version is not fully supported",
+      "Details": [
+        "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "7d68448f-719c-453e-ac4b-eb46a1a638a9",
+      "Order": 5,
+      "Timestamp": 1754560792162,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1032",
+      "Description": "Package(s) is not supported in Luna",
+      "Details": [
+        "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+      ],
+      "DescriptionValues": [
+        "com.unity.timeline (1.7.6)"
+      ],
+      "DetailsValues": [
+        "com.unity.timeline"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "D:/@Unity/Playable_Subject/Packages\\manifest.json",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "548cc905-cec0-4ec0-af83-2a0a66182202",
+      "Order": 6,
+      "Timestamp": 1754560792163,
+      "Stage": 1,
+      "ErrorType": 3,
+      "ErrorCode": "LP1002",
+      "Description": "Repeat wrap mode used on a texture with non power-of-two dimensions, this might not be rendered correctly.",
+      "Details": [
+        "Repeat wrap mode used on 'LiberationSans SDF Atlas' texture at 'Assets/@SampleProject/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset' with non power-of-two dimensions, this might not be rendered correctly."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        "LiberationSans SDF Atlas",
+        "Assets/@SampleProject/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "Assets/@SampleProject/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "fb761fcb-6f4c-4e1a-8327-da586985f664",
+      "Order": 7,
+      "Timestamp": 1754560792163,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1010",
+      "Description": "Looks like a collider was scaled, this might affect performance.",
+      "Details": [
+        "Shelf",
+        "Shelf",
+        "Shelf (1)",
+        "Shelf (2)",
+        "Shelf (3)",
+        "Shelf (4)",
+        "Shelf (5)",
+        "Shelf (6)",
+        "Shelf (7)",
+        "Shelf (8)"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 10,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "0a359902-6d0e-49f4-8ef2-82ca2a6f52a1",
+      "Order": 8,
+      "Timestamp": 1754560825835,
+      "Stage": 3,
+      "ErrorType": 0,
+      "ErrorCode": "LP3016",
+      "Description": "Msbuild failed when processing the file 'D:\\@Unity\\Playable_Subject\\6.3.0\\pipeline\\templates\\LunaCompiler\\Scripts\\Scripts.csproj' with message: D:\\@Unity\\Playable_Subject\\6.3.0\\tools\\msbuild-mono-custom\\Microsoft.Common.CurrentVersion.targets: (1232, 5): The reference assemblies for .NETFramework,Version=v4.7 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks",
+      "Details": null,
+      "DescriptionValues": [
+        "Msbuild failed when processing the file 'D:\\@Unity\\Playable_Subject\\6.3.0\\pipeline\\templates\\LunaCompiler\\Scripts\\Scripts.csproj' with message: D:\\@Unity\\Playable_Subject\\6.3.0\\tools\\msbuild-mono-custom\\Microsoft.Common.CurrentVersion.targets: (1232, 5): The reference assemblies for .NETFramework,Version=v4.7 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks"
+      ],
+      "DetailsValues": null,
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 1
+    }
+  ]
+}
